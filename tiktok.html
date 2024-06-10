@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shots - Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+        }
+        .video {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video video {
+            width: 100%;
+            height: auto;
+        }
+        .video-details {
+            padding: 20px;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        .likes {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            color: #888;
+        }
+        .likes i {
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        .description {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .comments {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-list">
+        <!-- Video 1 -->
+        <div class="video">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-details">
+                <div class="user-info">
+                    <img src="profile1.jpg" alt="User Profile">
+                    <h3>Nome do Usuário</h3>
+                    <div class="likes">
+                        <i class="fas fa-heart"></i> 100k
+                    </div>
+                </div>
+                <p class="description">Descrição do vídeo aqui.</p>
+                <div class="comments">
+                    <p>Comentários:</p>
+                    
+                    <ul>
+                        <li>Comentário 1</li>
+                        <li>Comentário 2</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-details">
+                <div class="user-info">
+                    <img src="profile2.jpg" alt="User Profile">
+                    <h3>Outro Usuário</h3>
+                    <div class="likes">
+                        <i class="fas fa-heart"></i> 80k
+                    </div>
+                </div>
+                <p class="description">Descrição do vídeo aqui.</p>
+                <div class="comments">
+                    <p>Comentários:</p>
+                    
+                    <ul>
+                        <li>Comentário 1</li>
+                        <li>Comentário 2</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
